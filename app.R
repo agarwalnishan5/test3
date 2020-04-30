@@ -34,8 +34,11 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-
+#added some comments
+    
+    
     output$distPlot <- renderPlot({
+        azzzzzfsdfsd0=4
         # generate bins based on input$bins from ui.R
         x    <- faithful[, 2]
         bins <- seq(min(x), max(x), length.out = input$bins + 1)
